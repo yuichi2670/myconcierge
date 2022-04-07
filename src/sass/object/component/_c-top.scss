@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.c-top {
+    position: fixed;
+    width: rem(40);
+    height: rem(40);
+    right: rem(15);
+    bottom: rem(30);
+    // transition: .3s;
+
+    @include mq(md) {
+        width: rem(60);
+        height: rem(60);
+        right: rem(60);
+        bottom: rem(53);
+    }
+}

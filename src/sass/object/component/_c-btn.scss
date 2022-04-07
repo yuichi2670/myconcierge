@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.c-btn {
+    background-color: $color-pink;
+    color: $color-white;
+    display: block;
+    font-size: rem(24);
+    font-weight: $medium;
+    padding: rem(16) rem(40);
+    border-radius: rem(100);
+    position: relative;
+    max-width: rem(345);
+    width: 100%;
+    margin: auto;
+
+    @include mq(md) {
+        max-width: rem(500);
+        font-size: rem(36);
+        padding: rem(21) rem(52);
+    }
+}
+
+.c-btn__icon {
+    width: rem(10);
+    height: rem(5);
+    position: absolute;
+    right: rem(40);
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include mq(md) {
+        width: rem(18);
+        height: rem(7);
+        right: rem(51);
+    }
+}
+
+.c-btn--submit {
+    max-width: rem(260);
+    font-size: rem(24);
+    padding: rem(13) rem(52);
+}

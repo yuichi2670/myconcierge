@@ -1,0 +1,162 @@
+@use "global" as *;
+
+.p-flow {
+
+}
+
+.p-flow__container {
+    max-width: rem(500);
+    width: 100%;
+    margin: auto;
+
+    @include mq(md) {
+        max-width: rem(721);
+    }
+}
+
+.p-flow__box {
+    margin-top: rem(30);
+    padding: rem(30) rem(15);
+    border: 1px solid $color-pink;
+    border-radius: rem(10);
+
+    @include mq(md) {
+        padding: rem(60) rem(70);
+    }
+}
+
+.p-flow__box--blue {
+    border: 1px solid #B0DBF3;
+}
+
+.p-flow__items {
+    
+    display: flex;
+    align-items: baseline;
+}
+
+
+.p-flow__items:nth-child(n + 2) {
+    margin-top: rem(20);
+}
+
+.p-flow__items2 {
+    
+}
+
+.p-flow__number {
+    width: rem(34);
+    height: rem(34);
+    line-height: rem(34);
+    background-color: $color-pink;
+    border-radius: 100px;
+    color: $color-white;
+    font-weight: $regular;
+    text-align: center;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-flow__number--blue {
+    background-color: #B0DBF3;
+}
+
+.p-flow__text {
+    font-size: rem(18);
+    width: 85%;
+    margin-left: rem(14);
+
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-flow__text span {
+    font-size: rem(10);
+
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.p-flow__cautionBox {
+    margin-top: rem(11);
+
+    @include mq(md) {
+        margin-top: rem(19);
+    }
+}
+
+.p-flow__caution {
+    display: flex;
+    align-items: baseline;
+}
+
+.p-flow__caution-nunber,
+.p-flow__caution-text {
+    font-size: rem(12);
+    line-height: 1.85;
+
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.p-flow__caution-nunber {
+    width: rem(16);
+}
+
+.p-flow__caution-text {
+    width: 94%;
+    margin-left: rem(3);
+}
+
+.p-flow__presents {
+    margin-top: rem(11);
+    background-color: #F6FCFF;
+    margin-left: rem(45);
+    // margin-right: rem(45);
+    font-size: rem(14);
+    padding: rem(14);
+    border-radius: rem(10);
+
+    @include mq(md) {
+        font-size: rem(18);
+        padding: rem(30);
+        margin-top: rem(17);
+    }
+}
+
+.p-flow__lists {
+    margin-top: rem(6);
+}
+
+.p-flow__list {
+    list-style-type: none;
+    // display: inline-grid;
+    padding-left: rem(10);
+}
+
+.p-flow__list:before {
+	content: '';
+	width: rem(4);
+	height: rem(4);
+	display: inline-block;
+	border-radius: 100%;
+    background-color: #000;
+	position: relative;
+	left: rem(-6);
+    top: rem(-3);
+}
+
+.p-flow__inner {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+    }
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.sp-nav {
+    display: none;
+    position: absolute;
+    top: rem(-15);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: $color-lightblue;
+}
+
+.sp-nav.is-active {
+    display: block;
+}
+
+.sp-nav__items {
+    padding: rem(100) 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.sp-nav__item {
+    width: 100%;
+}
+
+.sp-nav__item a {
+    text-align: center;
+    display: block;
+    padding: rem(26) 0;
+    font-size: rem(15);
+    font-weight: $medium;
+    line-height: 1;
+}

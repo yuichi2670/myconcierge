@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.p-demerits {
+    background-color: $color-lightblue;
+}
+
+.p-demerits__inner {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    max-width: rem(500);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: rem(771);
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+      }
+}
+
+.p-demerits__text01 {
+    margin-top: rem(30);
+    background-color: #F8F8F8;
+    padding: rem(17) rem(15);
+    font-size: rem(18);
+    border-radius: rem(10);
+
+    @include mq(md) {
+        font-size: rem(24);
+        padding: rem(28) rem(103);
+        border-radius: rem(15);
+    }
+}
+
+.p-demerits__arrow {
+    width: rem(22);
+    margin-top: rem(10);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        
+        margin-top: rem(38);
+        
+    }
+
+}
+
+.p-demerits__text02 {
+    margin-top: rem(10);
+    background-color: #F0F1F1;
+    padding: rem(17) rem(50);
+    font-size: rem(18);
+    text-align: center;
+    border-radius: rem(10);
+
+
+    @include mq(md) {
+        font-size: rem(24);
+        margin-top: rem(38);
+        padding: rem(31) rem(0);
+        border-radius: rem(15);
+    }
+}
+
+.p-demerits__dots {
+    margin-top: rem(19);
+
+    @include mq(md) {
+        margin-top: rem(57);
+    }
+}
+

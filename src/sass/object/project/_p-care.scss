@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.p-care__inner {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    max-width: rem(500);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    position: relative;
+
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+        max-width: rem(862);
+    }
+}
+
+.p-care__info {
+    margin-top: rem(30);
+    // position: relative;
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.p-care__image {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    max-width: rem(293);
+
+    @include mq(md) {
+        max-width: rem(613);
+        top: 39%;
+    }
+}
+
+
+.p-care__info p {
+    padding: 0;
+    border-bottom: 1px solid $color-pink;
+    text-decoration: none;
+    display: inline;
+    padding-bottom: rem(3);
+    line-height: 2.2;
+    font-size: rem(14);
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-care__table {
+    font-size: rem(14);
+    margin-top: rem(30);
+    line-height: 2;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-care__table tbody tr:nth-child(n + 2) {
+    margin-top: rem(10);
+}
+
+.p-care__number {
+    vertical-align: text-top;
+}
+
+.p-care__info02 {
+    font-size: rem(14);
+    line-height: 2;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-care__info02 span {
+    color: $color-pink;
+}
+
+.p-care__btn {
+    margin-top: rem(60);
+
+    @include mq(md) {
+        margin-top: rem(114);
+    }
+}

@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.c-section-title {
+    text-align: center;
+}
+
+.c-section-title:nth-child(n + 2) {
+    margin-top: rem(10);
+}
+
+.c-section-title__large,
+.c-section-title__small {
+    font-weight: $medium;
+} 
+
+.c-section-title__large {
+    font-size: rem(24);
+
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.c-section-title__small {
+    font-size: rem(12);
+    color: $color-subtitle;
+    margin-top: rem(5);
+
+    @include mq(md) {
+        font-size: rem(14);
+        margin-top: rem(10);
+    }
+}
+
+.c-section-title__underLine {
+    border-bottom: 1px dashed #F4C10C;
+    display: inline-block;
+}
+
+.c-section-title--pink {
+    color: $color-pink;
+}
+
+.c-section-title__large--pink {
+    color: $color-pink;
+}
+
+.c-section-title__small--pink {
+    color: $color-subtitle-pink;
+}

@@ -1,0 +1,113 @@
+@use "global" as *;
+
+.p-price__inner {
+  padding-top: rem(60);
+
+  @include mq(md) {
+    padding-top: rem(140);
+  }
+}
+
+.p-price__block {
+    max-width: rem(500);
+    width: 100%;
+    margin: auto;
+
+    @include mq(md) {
+      max-width: rem(721);
+    }
+}
+
+.p-price__textBox {
+    text-align: center;
+    margin-top: rem(30);
+}
+
+.p-price__text {
+    font-size: rem(14);
+    line-height: 1.8;
+
+    @include mq(md) {
+      font-size: rem(16);
+    }
+}
+
+.p-price__text:nth-child(n + 2) {
+    margin-top: rem(6);
+
+    @include mq(md) {
+      margin-top: rem(15);
+    }
+}
+
+.p-price-text--underLine {
+    border-bottom: 1px dashed #F4C10C;
+    display: inline-block;
+}
+
+.p-price__other {
+    font-size: rem(12);
+    margin-top: rem(20);
+
+    @include mq(md) {
+      font-size: rem(14);
+      margin-top: rem(32);
+    }
+}
+
+.p-price__table {
+    border: 2px solid $color-pink;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: rem(10);
+    width: 100%;
+    border-top: none;
+    overflow: hidden;
+    margin-top: rem(20);
+
+    @include mq(md) {
+      font-size: rem(24);
+    }
+  }
+
+  .p-price__table tbody th,
+  .p-price__table tbody td {
+    border-bottom: 1px solid $color-pink;
+    height: rem(56);
+    text-align: center;
+    vertical-align: middle;
+
+    @include mq(md) {
+      height: rem(70);
+    }
+  }
+
+  .p-price__table tbody th {
+    background-color: $color-pink;
+  }
+
+  .p-price__table tbody th:not(:first-child) {
+    border-left: 1px solid $color-white;
+  }
+
+  .p-price__table tbody td:not(:first-child) {
+    border-left: 1px solid $color-pink;
+  }
+
+  .p-price__table tbody tr:last-child th,
+  .p-price__table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .p-price__table--white {
+      color: $color-white;
+      font-weight: $normal;
+  }
+
+  .p-price__btn {
+      margin-top: rem(60);
+
+      @include mq(md) {
+        margin-top: rem(140);
+      }
+  }

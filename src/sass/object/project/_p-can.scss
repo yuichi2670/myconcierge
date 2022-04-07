@@ -1,0 +1,181 @@
+@use "global" as *;
+
+.p-can {
+    background-color: $color-lightpink;
+}
+
+.p-can__inner {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(80);
+    }
+}
+
+.p-can__cards {
+    max-width: rem(500);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(30);
+
+    @include mq(md) {
+        max-width: initial;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+.p-can__card {
+    @include mq(md) {
+        width: calc(33.333% - #{rem(59)} * 2/3);
+        margin-right: rem(59);
+    }
+}
+
+.p-can__card:nth-child(3n) {
+    @include mq(md) {
+        margin-right: 0;
+    }
+}
+
+.p-can__card:nth-child(n + 4) {
+    @include mq(md) {
+        margin-top: rem(60)!important;
+    }
+}
+
+.p-can__card:nth-child(n + 2) {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-can__iconBox {
+    background-color: $color-pink;
+    height: rem(56);
+    border-radius: rem(10) rem(10) 0 0;
+}
+
+.p-can__icon {
+    position: relative;
+    height: inherit;
+}
+
+.p-can__icon img {
+    width: rem(33);
+    height: rem(33);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p-can__info {
+    background-color: $color-white;
+    border-radius: 0 0 rem(10) rem(10);
+    padding: rem(30) rem(15);
+    height: rem(239);
+    
+    @include mq(md) {
+        height: rem(304);
+    }
+}
+
+
+.p-can__info-title,
+.p-can__info-text {
+    font-weight: $normal;
+}
+
+.p-can__info-line,
+.p-can__info-text {
+    margin-top: rem(20);
+}
+
+.p-can__info-title {
+    text-align: center;
+    font-size: rem(22);
+
+    @include mq(md) {
+        font-size: rem(24);
+        height: rem(68);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.p-can__info-line {
+    background-color: $color-pink;
+    height: rem(1);
+    width: rem(30);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-can__info-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-can__info-text02,
+.p-can__info-list {
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-can__info-text02 {
+    margin-top: rem(20);
+    margin-left: rem(5);
+}
+
+.p-can__info-list {
+    position: relative;
+    padding-left: rem(15);
+}
+
+.p-can__info-list:before {
+	content: '';
+	width: rem(4);
+	height: rem(4);
+	display: inline-block;
+	border-radius: 100%;
+    background-color: #000;
+	position: relative;
+	left: rem(-4);
+    top: rem(-4);
+
+    @include mq(md) {
+        
+    }
+}
+
+.p-can__info-list:not(:last-child) {
+    // margin-right: rem(7);
+}
+
+.p-can__other {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.p-can__other-text {
+    font-size: rem(14);
+    line-height: 1.8;
+
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}

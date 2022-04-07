@@ -1,0 +1,63 @@
+
+@use "global" as *;
+
+.p-confirm {
+    padding-top: rem(100);
+    background: url(../images/inquire-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    @include mq(md) {
+        padding-top: rem(150);
+        // margin-bottom: rem(150);
+    }
+}
+
+.p-confirm__container {
+
+}
+
+.p-confirm__title,
+.p-confirm__text {
+    font-size: rem(20);
+    letter-spacing: rem(2);
+    text-align: center;
+
+    @include mq(md) {
+        font-size: rem(30);
+    }
+}
+
+.p-confirm__sp {
+    @include mq(md) {
+        display: none
+    }
+}
+
+
+.p-confirm__text,
+.p-confirm__btn {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}
+
+
+
+.p-confirm__btn {
+    font-size: rem(18);
+    width: rem(260);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-confirm__btn-text {
+    text-align: center;
+}

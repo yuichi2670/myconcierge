@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>Myコンシェル</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="l-header p-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <img src="./images/header-logo.svg" alt="">
+      </div>
+      <div class="p-header__drawer c-hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!-- /p-header__drawer -->
+      <nav class="p-header__sp-nav sp-nav js-sp-nav" id="js-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item"><a href="#feature">特徴</a></li><!-- /sp-nav__item -->
+          <li class="sp-nav__item"><a href="#can">Myコンシェルでできること</a></li><!-- /sp-nav__item -->
+          <li class="sp-nav__item"><a href="#price">料金表</a></li><!-- /sp-nav__item -->
+          <li class="sp-nav__item"><a href="#flow">ご相談・ご契約の流れ</a></li><!-- /sp-nav__item -->
+          <li class="sp-nav__item sp-nav__item--pink"><a href="#inquire">お問い合わせ</a></li><!-- /sp-nav__item -->
+        </ul><!-- /sp-nab__items -->
+      </nav>
+      <nav class="p-header__pc-nav pc-nav js-pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item"><a href="#feature">特徴</a></li><!-- /sp-nav__item -->
+          <li class="pc-nav__item"><a href="#can">Myコンシェルでできること</a></li><!-- /sp-nav__item -->
+          <li class="pc-nav__item"><a href="#price">料金表</a></li><!-- /sp-nav__item -->
+          <li class="pc-nav__item"><a href="#flow">ご相談・ご契約の流れ</a></li><!-- /sp-nav__item -->
+          <li class="pc-nav__item pc-nav__item--pink"><a href="#inquire">お問い合わせ</a></li><!-- /sp-nav__item -->
+        </ul><!-- /sp-nab__items -->
+      </nav><!-- /p-header__sp-nav -->
+    </div><!-- /p-header__inner -->
+  </header><!-- /p-header -->
+
+  <section class="l-mv p-mv">
+    <div class="p-mv__inner l-inner">
+      <div class="p-mv__container">
+        <div class="p-mv__block">
+          <div class="p-mv__textBox">
+            <h2 class="p-mv__title">ハラスメント窓口だけじゃない、<br>多種多様な専門家集団だからこそ出来る、<br>明るい職場の実現</h2>
+            <p class="p-mv__subtitle">ハラスメントによる生産性の低下や離職率の低下を防ぎ、<br class="sp-br">より良い職場環境の整備を推進します。</p><!-- /p-mv__subtitle -->
+          </div><!-- /p-mv__textBox -->
+          <div class="p-mv__image">
+            <img src="./images/mv.png" alt="">
+          </div><!-- /p-mv__image -->
+        </div><!-- /p-mv__block -->
+        <div class="p-mv__info">
+          <p class="p-mv__info-text">2022年4月よりパワハラ防止法により中小企業の事業主は<span>パワハラ対策</span>が<span>完全義務化</span>されます。</p><!-- /p-mv__info-text -->
+          <p class="p-mv__info-text">これを機にハラスメント外部通報窓口を設置して従業員と会社を守りませんか？</p><!-- /p-mv__info-text -->
+        </div><!-- /p-mv__info -->
+      </div><!-- /p-mv__container -->
+    </div><!-- /p-mv__inner -->
+  </section><!-- /l-mv -->
+
+  <section class="l-support l-section p-support">
+    <div class="p-support__inner l-inner">
+      <div class="p-support__image">
+        <img src="./images/saport.png" alt="">
+      </div><!-- /p-support__image -->
+      <div class="p-support__btn">
+        <a href="#inquire" class="c-btn">
+          <p>お問い合わせはこちら</p>
+          <div class="c-btn__icon">
+            <img src="./images/arrow-icon.png" alt="">
+          </div><!-- /c-btn__icon -->
+        </a>
+      </div><!-- /p-support__btn -->
+    </div><!-- /p-support__inner -->
+  </section><!-- /p-support -->
+
+  <section class="l-section p-problems">
+    <div class="p-problems__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large">こんなお悩みありませんか？</h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small">Do you have these problems?</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-problems__wish">
+        <div class="p-problems__wish-image">
+          <img src="./images/problem.png" alt="">
+        </div><!-- /p-problems__wish-image -->
+        <ul class="p-problems__wish-items">
+          <li class="p-problems__wish-item">・ハラスメントによる退職リスクを避けたい</li>
+          <li class="p-problems__wish-item">・従業員の満足度を上げたい</li>
+          <li class="p-problems__wish-item">・採用で優秀な人材を獲得したい</li>
+          <li class="p-problems__wish-item">・社員定着率を上げたい</li>
+          <li class="p-problems__wish-item">・社員の様々な相談窓口が欲しい</li>
+        </ul>
+      </div><!-- /p-problems__wish -->
+    </div><!-- /p-problems__inner -->
+  </section><!-- /p-problems -->
+
+  <section class="p-solve">
+    <div class="p-solve__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large"><span class="p-solve__small-title">そのお悩み、</span></h1><!-- /c-section__title-large -->
+        <h1 class="c-section-title__large c-section-title__underLine p-solve__icon"><span class="c-section-title c-section-title--pink">Myコンシェル</span>で<br class="sp-br">
+          解決できます
+          <div class="p-solve__image">
+            <img src="./images/solve-icon.png" alt="">
+          </div><!-- /p-solve__image -->
+        </h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small">We can solve these problems !</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-solve__info">
+        <p>サービス概要のテキストが入ります。サービス概要のテキストが入ります。サービス概要のテキストが入ります。サービス概要のテキストが入ります。サービス概要のテキストが入ります。</p>
+        <p>サービス概要のテキストが入ります。サービス概要のテキストが入ります。サービス概要のテキストが入ります。</p>
+      </div><!-- /p-solve__info -->
+    </div><!-- /p-solve__inner -->
+  </section><!-- /p-solve -->
+
+  <section class="p-features" id="feature">
+    <div class="p-features__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large">Myコンシェルの特徴</h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small">Our features</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-features__cards">
+        <div class="p-features__card">
+          <div class="p-features__info">
+            <p class="p-features__info-number">1</p><!-- /p-features__info-number -->
+            <h3 class="p-features__info-title">資格を持ったプロが対応</h3>
+            <p class="p-features__info-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p><!-- /p-features__info-text -->
+          </div><!-- /p-features__info -->
+          <div class="p-features__image">
+            <img src="./images/features01.png" alt="">
+          </div><!-- /p-features__image -->
+        </div><!-- /p-features__card -->
+        <div class="p-features__card">
+          <div class="p-features__info">
+            <p class="p-features__info-number">2</p><!-- /p-features__info-number -->
+            <h3 class="p-features__info-title">お得な料金体系</h3>
+            <p class="p-features__info-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p><!-- /p-features__info-text -->
+          </div><!-- /p-features__info -->
+          <div class="p-features__image">
+            <img src="./images/features02.png" alt="">
+          </div><!-- /p-features__image -->
+        </div><!-- /p-features__card -->
+        <div class="p-features__card">
+          <div class="p-features__info">
+            <p class="p-features__info-number">3</p><!-- /p-features__info-number -->
+            <h3 class="p-features__info-title">国家資格者がスタンバイ</h3>
+            <p class="p-features__info-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p><!-- /p-features__info-text -->
+          </div><!-- /p-features__info -->
+          <div class="p-features__image">
+            <img src="./images/features03.png" alt="">
+          </div><!-- /p-features__image -->
+        </div><!-- /p-features__card -->
+      </div><!-- /p-features__cards -->
+      <div class="p-features__btn">
+        <a href="#inquire" class="c-btn">
+          <p>お問い合わせはこちら</p>
+          <div class="c-btn__icon">
+            <img src="./images/arrow-icon.png" alt="">
+          </div><!-- /c-btn__icon -->
+        </a>
+      </div><!-- /p-features__btn -->
+    </div><!-- /p-features__inner -->
+  </section><!-- /p-features -->
+
+  <section class="l-section p-can" id="can">
+    <div class="p-can__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large">Myコンシェルで<br>できること</h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small c-section-title__small--pink">What we can do</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-can__cards">
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can01.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">ハラスメント<br class="pc-br">ホットライン</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can02.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">メンタルヘルスケア</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can03.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">ワークライフ<br class="pc-br">バランス相談</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can04.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">法律相談</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can05.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">お金の相談</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can06.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">女性の相談</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can07.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">保険・金融相談</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+        <div class="p-can__card">
+          <div class="p-can__iconBox">
+            <div class="p-can__icon">
+              <img src="./images/can08.png" alt="">
+            </div><!-- /p-can__icon -->
+          </div><!-- /p-can__iconBox -->
+          <div class="p-can__info">
+            <h3 class="p-can__info-title">相続相談</h3><!-- /p-can__info-title -->
+            <div class="p-can__info-line"></div><!-- /p-can__info-line -->
+            <p class="p-can__info-text">説明文が入ります。説明文が入ります。説明文が入ります。</p><!-- /p-can__info-text -->
+          </div><!-- /p-can__info -->
+        </div><!-- /p-can__card -->
+      </div><!-- /p-can__cards -->
+      <div class="p-can__other">
+        <p class="p-can__other-text">各士業のご紹介をすることも可能です。<br>※弁護士、司法書士を除く</p><!-- / -->
+      </div><!-- /p-can__other -->
+    </div><!-- /p-can__inner -->
+  </section><!-- /p-can -->
+
+  <section class="p-price" id="price">
+    <div class="p-price__inner l-inner">
+      <div class="p-price__block">
+        <div class="c-section-title">
+          <h1 class="c-section-title__large">料金表</h1><!-- /c-section__title-large -->
+          <h2 class="c-section-title__small">Price list</h2><!-- /c-section__title-small -->
+        </div><!-- /c-section__title -->
+        <div class="p-price__container">
+          <div class="p-price__textBox">
+            <p class="p-price__text p-price-text--underLine">初期登録費用・オプション料金なし！</p><!-- /p-price__text-underLine -->
+            <p class="p-price__text">1年自動更新になります。<br>1000名を超える場合は別途ご相談ください。</p><!-- /p-price__text -->
+          </div><!-- /p-price__textBox -->
+          <div class="p-price__other">※料金は全て税込み表記になっております。</div><!-- /p-price__other -->
+          <table class="p-price__table">
+            <tbody>
+              <tr>
+                <th class="p-price__table--white">社員数</th>
+                <th class="p-price__table--white">月額費用</th>
+                <th class="p-price__table--white">従業員<br class="sp-br">1名あたり</th>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>1名〜10名</td>
+                <td>13,200円</td>
+                <td>257円〜</td>
+              </tr>
+              <tr>
+                <td>11名〜1000名</td>
+                <td>19,800円</td>
+                <td>257円〜</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="p-price__btn">
+            <a href="#inquire" class="c-btn">
+              <p>お問い合わせはこちら</p>
+              <div class="c-btn__icon">
+                <img src="./images/arrow-icon.png" alt="">
+              </div><!-- /c-btn__icon -->
+            </a>
+          </div><!-- /p-price__btn -->
+        </div><!-- /p-price__container -->
+      </div><!-- /p-price__block -->
+    </div><!-- /p-price__inner -->
+  </section><!-- /p-price -->
+
+  <section class="l-section p-demerits">
+    <div class="p-demerits__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large">内部社員対応のデメリット</h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small">Demerits of insourcing</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-demerits__text01">
+        <p>他の業務も持つ内部担当社員が担当することや社内の人間関係により適切に機能しない可能性</p>
+      </div><!-- /p-demerits__text01 -->
+      <div class="p-demerits__arrow">
+        <img src="./images/Polygon.png" alt="">
+      </div><!-- /p-demerits__arrow -->
+      <div class="p-demerits__text02">
+        <p>働きにくい職場環境</p>
+      </div><!-- /p-demerits__text01 -->
+      <div class="p-demerits__dots">
+        <img src="./images/dots.png" alt="">
+      </div><!-- /p-demerits__dots -->
+      <ul class="category__items">
+        <li class="category__item">馴れ合い</li><!-- /p-demerits__item -->
+        <li class="category__item">離職</li><!-- /p-demerits__item -->
+        <li class="category__item">悪循環</li><!-- /p-demerits__item -->
+        <li class="category__item">社内コストの増加</li><!-- /p-demerits__item -->
+        <li class="category__item">モチベーションの低下</li><!-- /p-demerits__item -->
+      </ul><!-- /p-demerits__items -->
+    </div><!-- /p-demerits__inner -->
+  </section><!-- /p-demerits -->
+
+  <section class="p-merits">
+    <div class="p-merits__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large">外部組織に委託するメリット</h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small">Merits of outsourcing</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-merits__box">
+        <ul class="p-merits__list">
+          <li class="p-merits__text">労働トラブルリスクの未然回避できる</li><!-- /p-merits__text -->
+          <li class="p-merits__text">当事者の負担ストレス回避できる</li><!-- /p-merits__text -->
+          <li class="p-merits__text">不正への対応緩和の回避できる</li><!-- /p-merits__text -->
+          <li class="p-merits__text">時間・人間関係を気にせず相談できる</li><!-- /p-merits__text -->
+          <li class="p-merits__text">従業員支援サポート導入企業認定書で企業イメージアップ</li><!-- /p-merits__text -->
+        </ul>
+      </div><!-- /p-merits__box -->
+      <div class="p-merits__dots">
+        <img src="./images/dots-pink.png" alt="">
+      </div><!-- /p-merits__dots -->
+      <ul class="category__items category__items--02">
+        <li class="category__item category__item--pink">リスク管理</li><!-- /p-demerits__item -->
+        <li class="category__item category__item--pink">ストレス回避</li><!-- /p-demerits__item -->
+        <li class="category__item category__item--pink">馴れ合い防止</li><!-- /p-demerits__item -->
+        <li class="category__item category__item--pink">離職防止</li><!-- /p-demerits__item -->
+        <li class="category__item category__item--pink">イメージアップ</li><!-- /p-demerits__item -->
+      </ul><!-- /p-demerits__items -->
+    </div><!-- /p-merits__inner -->
+  </section><!-- /p-merits -->
+
+  <section class="p-care">
+    <div class="p-care__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large c-section-title__underLine">メンタルヘルスケアの<span class="c-section-title c-section-title--pink">大切さ</span></h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small c-section-title__small--pink">Importance of mental health care</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-care__info">
+        <p>メンタルヘルスケアとは、全ての働く人が健やかに、いきいきと働けるような気配りと援助をすること、およびそのような活動が円滑に実践されるような仕組みを作り、実践することをいいます。</p>
+        <div class="p-care__image">
+          <img src="./images/care-bg.jpg" alt="">
+        </div><!-- /p-care__image -->
+      </div><!-- /p-care__info -->
+      <table class="p-care__table">
+        <tbody>
+          <tr>
+            <th class="p-care__number">①</th>
+            <td>健やかに、いきいきと働いている健康な人</td>
+          </tr>
+          <tr>
+            <th class="p-care__number">②</th>
+            <td>勤務はしていても過剰なストレス状態にある半健康な人</td>
+          </tr>
+          <tr>
+            <th class="p-care__number">③</th>
+            <td>ストレス関連疾患に罹ったり、精神障害の症状を呈している人</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="p-care__info02">
+        <p>の<span>全ての人</span>にその状態にあったケアをするものです。</p>
+      </div><!-- /p-care__info -->
+      <div class="p-care__btn">
+        <a href="#inquire" class="c-btn">
+          <p>お問い合わせはこちら</p>
+          <div class="c-btn__icon">
+            <img src="./images/arrow-icon.png" alt="">
+          </div><!-- /c-btn__icon -->
+        </a>
+      </div><!-- /p-care__btn -->
+    </div><!-- /p-care__inner -->
+  </section><!-- /p-care -->
+
+  <section class="p-flow" id="flow">
+    <div class="p-flow__inner l-inner">
+      <div class="p-flow__container">
+        <div class="c-section-title">
+          <h1 class="c-section-title__large">ご相談までの流れ</h1><!-- /c-section__title-large -->
+          <h2 class="c-section-title__small c-section-title__small--pink">Flow of consultation</h2><!-- /c-section__title-small -->
+        </div><!-- /c-section__title -->
+        <div class="p-flow__box">
+        <ul class="p-flow__items">
+          <li class="p-flow__number">1</li>
+          <li class="p-flow__text">LINE・QRコードにてご相談</li>
+        </ul>
+        <ul class="p-flow__items">
+          <li class="p-flow__number">2</li>
+          <li class="p-flow__text">相談日時確定の連絡</li>
+        </ul>
+        <ul class="p-flow__items">
+          <li class="p-flow__number">3</li>
+          <li class="p-flow__text">面談</li>
+        </ul>
+        <ul class="p-flow__items">
+          <li class="p-flow__number">4</li>
+          <li class="p-flow__text">各専門家から士業の絆<span>(*1)</span>に内容報告</li>
+        </ul>
+        <ul class="p-flow__items">
+          <li class="p-flow__number">5</li>
+          <li class="p-flow__text">士業の絆から企業へ報告<span>(*2)</span></li>
+        </ul>
+        </div><!-- /p-flow__box --> 
+            
+        <div class="p-flow__cautionBox">
+          <ul class="p-flow__caution">
+            <li class="p-flow__caution-nunber">*1</li>
+            <li class="p-flow__caution-text">士業の絆の説明が入ります。士業の絆の説明が入ります。士業の絆の説明が入ります。</li>
+          </ul>
+          <ul class="p-flow__caution">
+            <li class="p-flow__caution-nunber">*2</li>
+            <li class="p-flow__caution-text">士業の絆の匿名希望の方は個人を特定できるようなことはありませんのでご安心ください。</li>
+          </ul>
+        </div><!-- /p-flow__cautionBox -->
+      </div><!-- /p-flow__container -->
+    </div><!-- /p-flow__inner -->
+  </section><!-- /p-flow -->
+
+  <section class="p-flow">
+    <div class="p-flow__inner l-inner">
+      <div class="p-flow__container">
+        <div class="c-section-title">
+          <h1 class="c-section-title__large">ご契約までの流れ</h1><!-- /c-section__title-large -->
+          <h2 class="c-section-title__small">Frow of contract</h2><!-- /c-section__title-small -->
+        </div><!-- /c-section__title -->
+        <div class="p-flow__box">
+          <ul class="p-flow__items">
+            <li class="p-flow__number p-flow__number--blue">1</li>
+            <li class="p-flow__text">お問い合わせ</li>
+          </ul>
+          <ul class="p-flow__items">
+            <li class="p-flow__number p-flow__number--blue">2</li>
+            <li class="p-flow__text">面談<span>（オンライン・電話・メール）</span></li>
+          </ul>
+          <ul class="p-flow__items">
+            <li class="p-flow__number p-flow__number--blue">3</li>
+            <li class="p-flow__text">申込書ご入力</li>
+          </ul>
+          <ul class="p-flow__items">
+            <li class="p-flow__number p-flow__number--blue">4</li>
+            <li class="p-flow__text">ご利用登録</li>
+          </ul>
+          <ul class="p-flow__items">
+            <li class="p-flow__number p-flow__number--blue">5</li>
+            <li class="p-flow__text">入金</li>
+          </ul>
+          <ul class="p-flow__items">
+            <li class="p-flow__number p-flow__number--blue">6</li>
+            <li class="p-flow__text">翌月よりサービス開始</li>
+          </ul>
+          <div class="p-flow__presents">
+            <p class="p-flow__presents-title">お渡しする物</p><!-- /p-flow__presents-title -->
+            <ul class="p-flow__lists">
+              <li class="p-flow__list">認定書（クリアケース付き）</li>
+              <li class="p-flow__list">認定書</li>
+              <li class="p-flow__list">会員カード</li>
+            </ul>
+          </div><!-- /p-flow__presents -->
+        </div><!-- /p-flow__box --> 
+      </div>
+    </div><!-- /p-flow__inner -->
+  </section><!-- /p-flow -->
+
+  <section class="p-inquire" id="inquire">
+    <div class="p-inquire__inner l-inner">
+      <div class="c-section-title">
+        <h1 class="c-section-title__large c-section-title__large--pink">お問い合わせ</h1><!-- /c-section__title-large -->
+        <h2 class="c-section-title__small c-section-title__small--pink">Inquire</h2><!-- /c-section__title-small -->
+      </div><!-- /c-section__title -->
+      <div class="p-inquire__textBox">
+        <p><span>*</span>は必要事項になります。</p>
+        <p>ご記入の上、「送信する」ボタンをクリックして送信してください。</p>
+      </div><!-- /p-inquire__textBox -->
+      <div class="p-inquire__contents">
+        <div class="p-inquire__content">
+          <div class="p-inquire__head">
+            <p>会社名</p>
+            <span class="p-inquire__required">*</span>
+          </div><!-- /p-inquire__head -->
+          <div class="p-inquire__description">
+            <input class="p-inquire__input" type="text" placeholder="株式会社００">
+          </div><!-- /p-inquire__description -->
+        </div><!-- /p-inquire__content -->
+        <div class="p-inquire__content">
+          <div class="p-inquire__head">
+            <p>ご担当者名</p>
+            <span class="p-inquire__required">*</span>
+          </div><!-- /p-inquire__head -->
+          <div class="p-inquire__description">
+            <input class="p-inquire__input" type="name" placeholder="苗字  名前">
+          </div><!-- /p-inquire__description -->
+        </div><!-- /p-inquire__content -->
+        <div class="p-inquire__content">
+          <div class="p-inquire__head">
+            <p>電話番号</p>
+            <span class="p-inquire__required">*</span>
+          </div><!-- /p-inquire__head -->
+          <div class="p-inquire__description">
+            <input class="p-inquire__input" type="tel" placeholder="090-0000-0000">
+          </div><!-- /p-inquire__description -->
+        </div><!-- /p-inquire__content -->
+        <div class="p-inquire__content">
+          <div class="p-inquire__head">
+            <p>メールアドレス</p>
+            <span class="p-inquire__required">*</span>
+          </div><!-- /p-inquire__head -->
+          <div class="p-inquire__description">
+            <input class="p-inquire__input" type="email" placeholder="example@mail.co.jp">
+          </div><!-- /p-inquire__description -->
+        </div><!-- /p-inquire__content -->
+        <div class="p-inquire__content">
+          <div class="p-inquire__head">
+            <p>会社規模</p>
+            <span class="p-inquire__required">*</span>
+          </div><!-- /p-inquire__head -->
+          <div class="p-inquire__description">
+            <input class="p-inquire__input" type="text" placeholder="24人">
+          </div><!-- /p-inquire__description -->
+        </div><!-- /p-inquire__content -->
+        <div class="p-inquire__content">
+          <div class="p-inquire__head">
+            <p>お問い合わせ内容</p>
+            <span class="p-inquire__required">*</span>
+          </div><!-- /p-inquire__head -->
+          <div class="p-inquire__textarea">
+            <textarea class="p-inquire__textarea-text" type="text" placeholder="ご自由にご記入ください。"></textarea>
+          </div><!-- /p-inquire__description -->
+        </div><!-- /p-inquire__content -->
+        <div class="p-inquire__btn">               
+          <input class="c-btn p-inquire__button c-btn--submit" type="submit" value="送信する">
+          <img src="./images/submit-icon.png" alt="">
+        </div><!-- /p-sub-contact__contact -->
+      </div><!-- /p-inquire__contents -->
+    </div><!-- /p-inquire_inner -->
+  </section><!-- /p-inquire -->
+
+  <footer class="p-footer"></footer><!-- /p-footer -->
+
+  <div class="c-top" id="page_top">
+    <a href="#">
+      <img src="./images/to-top.png" alt="">
+    </a>
+  </div><!-- /p-footer__top -->
+
+ 
+</body>
+</html>
